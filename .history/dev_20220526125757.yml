@@ -1,0 +1,6 @@
+installing jenkins
+
+- http://13.211.164.112:8080/hg
+
+ssh -i "sydney.pem" ec2-user@ec2-54-253-25-105.ap-southeast-2.compute.amazonaws.com
+

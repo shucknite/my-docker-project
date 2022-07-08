@@ -1,0 +1,20 @@
+- Installing jenkins
+
+#!/bin/bash
+cd /home/ec2-user
+sudo yum install java-1.8* -y
+sudo yum install wget -y 
+sudo yum install git -y
+sudo wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkinsio./redhat-stable/jenkins.repo
+sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+sudo amazon-linux-extras install epel -y 
+sudo yum update
+sudo yum install jenkins java-1.8-openjdk-devel -y
+#start jenkins service 
+sudo systemctl start jenkins 
+#setup jenkins to start at boot
+sudo systemctl enable jenkins
+sudo systemctl status jenkins
+
+
+once finish copy public ip of instance and place on browser. then sign into jenkinsjk``

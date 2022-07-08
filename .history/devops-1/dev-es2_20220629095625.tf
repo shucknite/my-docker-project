@@ -1,0 +1,3 @@
+resource awe_instance {
+    
+}
